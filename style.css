@@ -1,0 +1,43 @@
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: arial;
+}
+.navigation-bar{
+    height: 10vh;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.logo{
+    width: 157px;
+    height: 49px;
+}
+.navigation-bar__options > ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navigation-bar__options ul > li > a{
+    text-decoration: none;
+    color: #292929;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+}
+.navigation-bar__btn-entrar{
+    width: 188px;
+    height: 49px;
+    background-color: transparent;
+    border-radius: .6rem;
+    border: 2px solid;
+    border-color: #292929;
+    color: #292929;
+    font-size: 1.5rem;
+}
+.comida-oriental__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
