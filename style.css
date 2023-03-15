@@ -12,7 +12,7 @@ body{
 }
 .logo{
     width: 157px;
-    height: 49px;
+    height: 35px;
 }
 .navigation-bar__options > ul{
     display: flex;
@@ -22,22 +22,71 @@ body{
 .navigation-bar__options ul > li > a{
     text-decoration: none;
     color: #292929;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 5rem;
+    font-weight: 500;
+}
+.navigation-bar__options ul > li > a:hover{
+    color: #DA2535;
 }
 .navigation-bar__btn-entrar{
-    width: 188px;
-    height: 49px;
+    width: 11rem;
+    height: 3rem;
     background-color: transparent;
     border-radius: .6rem;
     border: 2px solid;
     border-color: #292929;
     color: #292929;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+.navigation-bar__btn-entrar:hover{
+    border-color: #DA2535;
+    color: #DA2535;
 }
 .comida-oriental__container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
+    margin-bottom: 6rem;
+}
+.comida-oriental__title{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    color: #292929;
+    margin: 0;
+}
+.comida-oriental__description{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #292929;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    line-height: 160%;
+}
+.comida-oriental__btn-cardapio{
+    width: 18rem;
+    height: 3.7rem;
+    padding: .6rem 2.5rem;
+    background-color: #DA2535;
+    color: #fff;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: .6rem;
+}
+.comida-oriental__sushi-banner{
+    width: 25rem;
+    height: 33rem;
+    animation: sushi-up 4s;
+}
+@keyframes sushi-up{
+    from{
+      transform: translatey(+100px);
+      opacity: 20%;
+    }
+    to{
+      transform: translate(0);
+      opacity: 100%;
+    }
 }
