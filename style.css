@@ -1,122 +1,176 @@
-body{
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: arial;
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: arial;
 }
-.navigation-bar{
-    height: 10vh;
-    margin-top: 2.5rem;
+.navigation-bar {
+  height: 10vh;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.logo {
+  width: 157px;
+  height: 35px;
+}
+.navigation-bar__options > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.navigation-bar__options ul > li > a {
+  text-decoration: none;
+  color: #292929;
+  font-size: 1.3rem;
+  margin-right: 5rem;
+  font-weight: 500;
+}
+.navigation-bar__options ul > li > a:hover {
+  color: #da2535;
+}
+.navigation-bar__btn-entrar {
+  width: 11rem;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 0.6rem;
+  border: 2px solid;
+  border-color: #292929;
+  color: #292929;
+  font-size: 1.3rem;
+}
+.navigation-bar__btn-entrar:hover {
+  border-color: #da2535;
+  color: #da2535;
+}
+.comida-oriental__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+.comida-oriental__title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #292929;
+  margin: 0;
+}
+.comida-oriental__description {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #292929;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  line-height: 160%;
+}
+.comida-oriental__btn-cardapio {
+  width: 18rem;
+  height: 3.7rem;
+  padding: 0.6rem 2.5rem;
+  background-color: #da2535;
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 0.6rem;
+}
+.comida-oriental__sushi-banner {
+  width: 25rem;
+  height: 33rem;
+  animation: sushi-up 4s;
+}
+@keyframes sushi-up {
+  from {
+    transform: translatey(+100px);
+    opacity: 20%;
+  }
+  to {
+    transform: translate(0);
+    opacity: 100%;
+  }
+}
+.comida-tradicional__container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.comida-tradicional__banner {
+  width: 29rem;
+  height: 23rem;
+}
+.comida-tradicional__titulo {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #292929;
+  line-height: 130%;
+  margin: 0;
+}
+.comida-tradicional__descricao {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #292929;
+  margin-bottom: 2.5rem;
+  line-height: 160%;
+}
+.comida-tradicional__modo-preparo {
+  color: #da2535;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+.mais-populares__container{
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    flex-direction: column;
+    gap: 4rem;
 }
-.logo{
-    width: 157px;
-    height: 35px;
+.mais-populares__titulo {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #292929;
+  text-align: center;
 }
-.navigation-bar__options > ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+.mais-populares__container-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
 }
-.navigation-bar__options ul > li > a{
-    text-decoration: none;
-    color: #292929;
-    font-size: 1.3rem;
-    margin-right: 5rem;
-    font-weight: 500;
+.mais-populares__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 2rem;
+  position: relative;
+  min-height: 400px;
+  justify-content: flex-end;
+  padding: 40px;
 }
-.navigation-bar__options ul > li > a:hover{
-    color: #DA2535;
+.mais-populares__card-image {
+  width: 12.5rem;
+  height: 12.5rem;
+  position: absolute;
+  top: -40px;
 }
-.navigation-bar__btn-entrar{
-    width: 11rem;
-    height: 3rem;
-    background-color: transparent;
-    border-radius: .6rem;
-    border: 2px solid;
-    border-color: #292929;
-    color: #292929;
-    font-size: 1.3rem;
+.mais-populares__card-title {
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #292929;
 }
-.navigation-bar__btn-entrar:hover{
-    border-color: #DA2535;
-    color: #DA2535;
+.mais-populares__card-description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #616161;
+  text-align: center;
 }
-.comida-oriental__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    margin-bottom: 6rem;
-}
-.comida-oriental__title{
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 3.6rem;
-    color: #292929;
-    margin: 0;
-}
-.comida-oriental__description{
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #292929;
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
-    line-height: 160%;
-}
-.comida-oriental__btn-cardapio{
-    width: 18rem;
-    height: 3.7rem;
-    padding: .6rem 2.5rem;
-    background-color: #DA2535;
-    color: #fff;
-    border: none;
-    font-size: 1.3rem;
-    border-radius: .6rem;
-}
-.comida-oriental__sushi-banner{
-    width: 25rem;
-    height: 33rem;
-    animation: sushi-up 4s;
-}
-@keyframes sushi-up{
-    from{
-      transform: translatey(+100px);
-      opacity: 20%;
-    }
-    to{
-      transform: translate(0);
-      opacity: 100%;
-    }
-}
-.comida-tradicional__container{
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6rem;
-}
-.comida-tradicional__banner{
-    width: 29rem;
-    height: 23rem;
-}
-.comida-tradicional__titulo{
-    font-weight: 600;
-    font-size: 3rem;
-    color: #292929;
-    line-height: 130%;
-    margin: 0;
-}
-.comida-tradicional__descricao{
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: #292929;    
-    margin-bottom: 2.5rem;
-    line-height: 160%;
-}
-.comida-tradicional__modo-preparo{
-    color: #DA2535;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
+.mais-populares__card-valor {
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  color: #292929;
 }
