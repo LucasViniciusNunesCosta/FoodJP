@@ -90,3 +90,33 @@ body{
       opacity: 100%;
     }
 }
+.comida-tradicional__container{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.comida-tradicional__banner{
+    width: 29rem;
+    height: 23rem;
+}
+.comida-tradicional__titulo{
+    font-weight: 600;
+    font-size: 3rem;
+    color: #292929;
+    line-height: 130%;
+    margin: 0;
+}
+.comida-tradicional__descricao{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #292929;    
+    margin-bottom: 2.5rem;
+    line-height: 160%;
+}
+.comida-tradicional__modo-preparo{
+    color: #DA2535;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
