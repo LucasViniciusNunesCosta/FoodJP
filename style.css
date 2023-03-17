@@ -200,3 +200,9 @@ body {
   line-height: 160%;
   color: #616161;
 }
+.localizacao__title{
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 123%;
+  color: #292929;
+}
