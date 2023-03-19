@@ -211,12 +211,13 @@ body {
 .localizacao__input-container{
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 .localizacao__input{
   width: 60%;
   height: 1.5rem;
-  padding: .5rem;
-  background-color: #f3f3f3;
+  padding: .7rem;
+  background-color: #FBFBFB;
   border: 1px solid;
   border-color: #616161;
   border-radius: 10px 0px 0px 10px;
@@ -230,4 +231,24 @@ body {
   color: #FBFBFB;
   border-radius: 0px 10px 10px 0px;
   font-size: 1rem;
+}
+
+.footer_container{
+  display: flex;
+  gap: 10%;
+  align-items: flex-start;
+}
+.footer__list-title{
+  font-weight: 550;
+  font-size: 2rem;
+  line-height: 123%;
+  color: #292929;
+  margin-top: 0;
+}
+.footer__list-item{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+  color: #616161;
 }
