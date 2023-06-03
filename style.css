@@ -252,3 +252,74 @@ body {
   letter-spacing: 0.015em;
   color: #616161;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body{
+    margin: 8px 10px;
+  }
+  .navigation-bar{
+    margin-bottom: 3rem;
+  }
+  .navigation-bar__options, .navigation-bar__btn-entrar{
+    display: none;
+  }
+  .comida-oriental__container{
+    gap: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .comida-oriental__title{
+    width: 90vw;
+  }
+  .comida-oriental__description{
+    width: 90vw;
+    word-break: break-all;
+  }
+  .comida-oriental__btn-cardapio{
+    width: 90vw;
+  }
+  .comida-oriental__sushi-banner{
+    display: none;
+  }
+  .comida-tradicional__container{
+    flex-direction: column;
+  }
+  .comida-tradicional__banner{
+    width: 90vw;
+    height: auto;
+  }
+  .comida-tradicional__descricao-container{
+    text-align: center;
+  }
+  .mais-populares__container-cards{
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .comentario__titulo{
+    text-align: center;
+  }
+  .comentario__card-container{
+    flex-direction: column;
+  }
+  .localizacao__title{
+    text-align: center;
+  }
+  .localizacao__input{
+    width: 65vw;
+  }
+  .localizacao__btn{
+    width: 20vw;
+  }
+  .footer_container{
+    flex-direction: column;
+  }
+  .logo:nth-child(1){
+    margin-bottom: 2rem;
+  }
+  .footer__list-item{
+    line-height: 1rem;
+  }
+  .footer__list-title{
+    margin-bottom: 15px;
+  }
+}
