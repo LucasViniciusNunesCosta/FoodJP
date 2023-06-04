@@ -253,7 +253,7 @@ body {
   color: #616161;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   body{
     margin: 8px 10px;
   }
@@ -321,5 +321,23 @@ body {
   }
   .footer__list-title{
     margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px){
+  body{
+    margin: 8px 10px;
+  }
+  .comentario__titulo{
+    text-align: center;
+  }
+  .comentario__card-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .comentario__card{
+    width: 80vw;
+  }
+  .localizacao__mapa{
+    width: 95vw;
   }
 }
