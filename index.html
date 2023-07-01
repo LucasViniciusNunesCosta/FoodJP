@@ -11,15 +11,17 @@
     <nav class="navigation-bar">
         <img class="logo" src="src/Logo-FoodJP.png" alt="Logotipo FoodJP">
         <div class="navigation-bar__options">
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Cardápio</a></li>
-                <li><a href="">Sobre</a></li>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon"></label>
+            <ul class="navigation__list">
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Cardápio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
             </ul>
         </div>
         <button class="navigation-bar__btn-entrar">Entrar</button>
     </nav>
-    <section class="comida-oriental__container">
+    <section class="comida-oriental__container" id="Inicio">
         <div class="comida-oriental__left">
             <h2 class="comida-oriental__title">Comida Oriental</h2>
             <p class="comida-oriental__description">A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e ingredientes frescos.</p>
@@ -29,7 +31,7 @@
             <img class="comida-oriental__sushi-banner" src="src/kisspng-sushi-japanese-cuisine-buffet-restaurant-food-office-catering-corporate-catering-san-francis-5bab5b3f1579d9 1.png" alt="">
         </div>
     </section>
-    <section class="comida-tradicional__container">
+    <section class="comida-tradicional__container" id="sobre">
         <div class="comida-tradicional__banner-container">
             <img class="comida-tradicional__banner" src="src/img segurando prato.png" alt="Mãos segurando um prato de cerâmica preto com comida Japonesa">
         </div>
@@ -39,7 +41,7 @@
             <a href="" class="comida-tradicional__modo-preparo">Ler mais sobre o modo de preparo</a>
         </div>
     </section>
-    <section class="mais-populares__container">
+    <section class="mais-populares__container" id="Cardápio">
         <h2 class="mais-populares__titulo">Mais populares</h2>
         <div class="mais-populares__container-cards">
             <div class="mais-populares__card">
@@ -121,5 +123,17 @@
             <p class="footer__list-item">Retirada</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navigationList = document.querySelector(".navigation__list");
+      
+        menuToggle.addEventListener("change", function () {
+          if (this.checked) {
+            navigationList.style.display = "block";
+          } else {
+            navigationList.style.display = "none";
+          }
+        });
+      </script>
 </body>
 </html>

@@ -29,6 +29,21 @@ body {
 .navigation-bar__options ul > li > a:hover {
   color: #da2535;
 }
+.menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  background-image: linear-gradient(#646464, #646464), linear-gradient(#646464, #646464),
+  linear-gradient(#646464, #646464);
+  background-size: 100% 2px, 100% 2px, 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 25%, 0 50%, 0 75%;
+  transition: transform 0.3s ease;
+}
 .navigation-bar__btn-entrar {
   width: 11rem;
   height: 3rem;
@@ -260,8 +275,26 @@ body {
   .navigation-bar{
     margin-bottom: 3rem;
   }
-  .navigation-bar__options, .navigation-bar__btn-entrar{
+  .navigation-bar__btn-entrar{
     display: none;
+  }
+  .navigation-bar__options{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+  }
+  .navigation-bar__options > ul{
+    display: none;
+    padding: 0;
+    flex-direction: column;
+  }
+  .navigation-bar__options >ul > li> a{
+    margin: 0;
+  }
+  .menu-icon {
+    display: block;
   }
   .comida-oriental__container{
     gap: 0;
